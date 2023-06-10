@@ -259,8 +259,22 @@ main {
 }
 
 /* media querys */
-@media (min-width: 10px) and (max-width: 408px) {
-  .search {
-    padding-right: 0.1rem;
+@media (max-width: 500px) {
+  .precio {
+    color: #000000;
+    font-weight: bold;
+  }
+  main {
+    background-image: url(../img/Hero.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    text-align: end;
+    padding-right: 01rem;
   }
 }
