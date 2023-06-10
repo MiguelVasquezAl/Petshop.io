@@ -108,19 +108,26 @@ main {
 /* ----Estilo de las cards*/
 
 .container {
-  border: 1px solid #e0e0e0;
   display: flex;
-  justify-content: space-around;
-  gap: 2rem;
-  box-sizing: border-box;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.2rem;
+  padding: 1.5rem 0;
 }
 .card {
-  border: 1px solid blue;
-  height: 265px;
-  width: 312px;
+  background-color: rgba(250, 249, 245, 255);
+}
+.continue {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  justify-content: space-between;
+  padding-bottom: 1rem;
+  color: #3c2313;
+}
+.precio {
+  color: #f0a83e;
+  font-weight: bold;
 }
 
 /* -----Estilos del footer */
@@ -143,11 +150,20 @@ main {
     padding: 0.3rem 1.5rem;
   }
 }
+.suscribete {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 .search {
   display: flex;
   align-items: center;
   gap: 1rem;
   padding-right: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .input {
@@ -240,4 +256,11 @@ main {
   border-radius: 15px;
   padding: 0.5rem 1rem;
   border: none;
+}
+
+/* media querys */
+@media (min-width: 10px) and (max-width: 408px) {
+  .search {
+    padding-right: 0.1rem;
+  }
 }
