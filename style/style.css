@@ -142,19 +142,17 @@ main {
   display: flex;
   justify-content: space-between;
   background-color: #f0a83e;
-  .suscribete {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    color: white;
-    padding: 0.3rem 1.5rem;
-  }
+  padding: 0.5rem 0;
 }
 .suscribete {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  color: white;
+  gap: 0.8rem;
+  position: relative;
+  left: 0.5rem;
 }
 .search {
   display: flex;
@@ -259,11 +257,7 @@ main {
 }
 
 /* media querys */
-@media (max-width: 500px) {
-  .precio {
-    color: #000000;
-    font-weight: bold;
-  }
+@media (max-width: 600px) {
   main {
     background-image: url(../img/Hero.png);
     background-size: cover;
@@ -276,5 +270,13 @@ main {
     align-items: end;
     text-align: end;
     padding-right: 01rem;
+  }
+  .container_subs {
+    display: flex;
+    background-color: #f0a83e;
+    flex-direction: column;
+  }
+  .container_subs {
+    padding: 0.5rem 0;
   }
 }
