@@ -132,8 +132,6 @@ main {
 
 /* -----Estilos del footer */
 .footer {
-  /* hacer que este fijo abajo de la pagina siempre */
-  position: fixed;
   bottom: 0;
   width: 100%;
 }
@@ -276,7 +274,13 @@ main {
     background-color: #f0a83e;
     flex-direction: column;
   }
-  .container_subs {
-    padding: 0.5rem 0;
+  .container_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .info {
+    order: 1;
   }
 }
